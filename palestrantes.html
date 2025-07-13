@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Palestrantes - Seminário Capixaba de Aplicações em Inteligência Artificial</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        html {
+            scroll-padding-top: 70px; 
+        }
+
+        .navbar.navbar-scrolled {
+            background-color: #198754 !important;
+        }
+        
+        section {
+            padding-top: 120px;
+            padding-bottom: 60px;
+        }
+        
+        /* Adicionando um estilo para o container de palestrante "a confirmar" */
+        .palestrante-pendente {
+            opacity: 0.7;
+            border: 2px dashed #6c757d;
+        }
+    </style>
+</head>
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top navbar-scrolled">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">SCAIA</a>            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>        
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html#inicio">Página Inicial</a></li>
+                    <li class="nav-item"><a class="nav-link" href="programacao.html">Programação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#inscricoes">Inscrições</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="palestrantes.html">Palestrantes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="index.html#local">Local</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Seção de Palestrantes com dados atualizados -->
+    <section id="palestrantes">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="text-success">Palestrantes</h2>
+                <p class="lead text-muted">Conheça os perfis dos especialistas que compartilharão seus conhecimentos.</p>
+            </div>
+
+            <!-- Container Palestrante 1: Alexandre Chiavegatto Filho -->
+            <div class="bg-white p-4 p-md-5 rounded shadow-sm mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                        <!-- Assumindo que alexandre.jpg é a foto correta -->
+                        <img src="images/alexandre.jpg" class="img-fluid rounded-circle" alt="Alexandre Chiavegatto Filho" style="width: 180px; height: 180px; object-fit: cover;">
+                    </div>
+                    <div class="col-lg-9">
+                        <h3>Alexandre Chiavegatto Filho (USP)</h3>
+                        <p class="lead text-success"><strong>Palestra:</strong> IA Generativa: Avanços, Aplicações e Desafios Éticos</p>
+                        <p class="text-muted">
+                           A biografia e mais detalhes sobre o palestrante serão adicionados em breve.
+                        </p>
+                        <a href="#" class="btn btn-success mt-2">Ver Perfil</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container Palestrante 2: Marcelo da Silva Reis -->
+            <div class="bg-white p-4 p-md-5 rounded shadow-sm mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                        <!-- Assumindo que marceloreis.jpeg é a foto correta -->
+                        <img src="images/marceloreis.jpeg" class="img-fluid rounded-circle" alt="Marcelo da Silva Reis" style="width: 180px; height: 180px; object-fit: cover;">
+                    </div>
+                    <div class="col-lg-9">
+                        <h3>Marcelo da Silva Reis (UNICAMP)</h3>
+                        <p class="lead text-success"><strong>Palestra:</strong> IA em Saúde: Diagnósticos, Tratamentos e Personalização do Cuidado</p>
+                        <p class="text-muted">
+                           A biografia e mais detalhes sobre o palestrante serão adicionados em breve.
+                        </p>
+                        <a href="#" class="btn btn-success mt-2">Ver Perfil</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container Palestrante 3: Alberto Ferreira de Souza -->
+            <div class="bg-white p-4 p-md-5 rounded shadow-sm mb-5">
+                 <div class="row align-items-center">
+                    <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                         <!-- Assumindo que albertoferreira.jpeg é a foto correta -->
+                        <img src="images/albertoferreira.jpeg" class="img-fluid rounded-circle" alt="Alberto Ferreira de Souza" style="width: 180px; height: 180px; object-fit: cover;">
+                    </div>
+                    <div class="col-lg-9">
+                        <h3>Alberto Ferreira de Souza (UFES)</h3>
+                        <p class="lead text-success"><strong>Palestra:</strong> Automação, Inteligência Artificial e o Futuro do Trabalho: Desafios e Oportunidades</p>
+                        <p class="text-muted">
+                           A biografia e mais detalhes sobre o palestrante serão adicionados em breve.
+                        </p>
+                        <a href="#" class="btn btn-success mt-2">Ver Perfil</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container Palestrante 4: Anderson Silva Soares -->
+            <div class="bg-white p-4 p-md-5 rounded shadow-sm mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                        <!-- Assumindo que andersonsoares.jpg é a foto correta -->
+                        <img src="images/andersonsoares.jpg" class="img-fluid rounded-circle" alt="Anderson Silva Soares" style="width: 180px; height: 180px; object-fit: cover;">
+                    </div>
+                    <div class="col-lg-9">
+                        <h3>Anderson Silva Soares (UFG)</h3>
+                        <p class="lead text-success"><strong>Palestra:</strong> IA e Educação: Personalização e Democratização do Conhecimento</p>
+                        <p class="text-muted">
+                           A biografia e mais detalhes sobre o palestrante serão adicionados em breve.
+                        </p>
+                        <a href="#" class="btn btn-success mt-2">Ver Perfil</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Container Palestrante 5: Franco Machado -->
+            <div class="bg-white p-4 p-md-5 rounded shadow-sm mb-5">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                        <!-- Assumindo que francomachado.jpeg é a foto correta -->
+                        <img src="images/francomachado.jpeg" class="img-fluid rounded-circle" alt="Franco Machado" style="width: 180px; height: 180px; object-fit: cover;">
+                    </div>
+                    <div class="col-lg-9">
+                        <h3>Franco Machado (Mogai)</h3>
+                        <p class="lead text-success"><strong>Palestra:</strong> Transformando IA em negócios: da academia ao mercado</p>
+                        <p class="text-muted">
+                           A biografia e mais detalhes sobre o palestrante serão adicionados em breve.
+                        </p>
+                        <a href="#" class="btn btn-success mt-2">Ver Perfil</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Container Palestrante 6: Clerinsom San' Anna (A CONFIRMAR) -->
+            <div class="bg-white p-4 p-md-5 rounded shadow-sm mb-5 palestrante-pendente">
+                <div class="row align-items-center">
+                    <div class="col-lg-3 text-center mb-4 mb-lg-0">
+                        <!-- Imagem de placeholder. Substitua por images/clerinsom.jpg quando tiver a foto -->
+                        <img src="https://placehold.co/180x180/6c757d/ffffff?text=Aguardando" class="img-fluid rounded-circle" alt="Palestrante a confirmar">
+                    </div>
+                    <div class="col-lg-9">
+                        <h3>Clerinsom San' Anna (AWS)</h3>
+                        <p class="lead text-muted"><strong>Palestra:</strong> Tema em aberto</p>
+                        <p class="text-muted">
+                           <span class="badge bg-warning text-dark">Participação a confirmar</span><br>
+                           Estamos aguardando a confirmação e mais detalhes sobre a participação deste palestrante.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-success text-white text-center py-3">
+        <div class="container">
+            <small>Ifes - Campus Serra © 2023</small>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
