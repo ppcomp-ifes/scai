@@ -3,27 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Seminário Capixaba de Aplicações de Inteligência Artificial</title>
+    <title>Seminário Capixaba de Aplicações em Inteligência Artificial</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         html {
-            scroll-padding-top: 70px; /* Ajuste este valor se a altura da sua navbar mudar */
+            scroll-padding-top: 70px; 
         }
 
         .navbar {
-            background-color: #198754 !important; 
-        }
-        .nav-link {
-            color: white !important; /* Corrigido para branco para melhor contraste */
-            font-weight: bold;
+            background-color: transparent !important; 
+            transition: background-color 0.4s ease-in-out;
         }
 
+        /* Nova classe para ser aplicada com JS durante o scroll */
+        .navbar.navbar-scrolled {
+            /* Cor verde do bg-success do Bootstrap */
+            background-color: #198754 !important;
+        }
+
+        .nav-link {
+            color: white !important;
+            font-weight: normal; 
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); 
+            padding-left: 1rem;
+            padding-right: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid transparent; 
+            transition: border-color 0.3s;
+        }
+        
+        .navbar-nav .nav-link.active,
+        .navbar-nav .nav-link:hover {
+            border-bottom-color: #f5d547;
+        }
         
         section {
-            min-height: 100vh; /* Define a altura mínima como 100% da altura da tela */
-            display: flex; /* Habilita o Flexbox */
-            justify-content: center; /* Centraliza o container horizontalmente */
-            align-items: center; /* Centraliza o container verticalmente */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             width: 100%;
         }
 
@@ -32,26 +50,23 @@
             background-size: cover;
             background-position: center;
             color: white;
-            text-align: center; /* Centraliza o texto dentro da seção */
+            text-align: center;
         }
     </style>
 </head>
 <body>
-    <!-- Navbar -->
+    <!-- Navbar Modificada -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#inicio">
-                <img src="images/logo.jpeg" alt="IFES" height="40" class="me-2">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <a class="navbar-brand" href="#inicio">SCAIA</a>            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+            </button>        
+                <div class="collapse navbar-collapse" id="navbarNav">
+                <!-- Links da Navbar -->
                 <ul class="navbar-nav ms-auto">
-                    <!-- Links atualizados para apontar para os IDs corretos -->
-                    <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Página Inicial</a></li>
                     <li class="nav-item"><a class="nav-link" href="#programacao">Programação</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link" href="#inscricoes">Inscrições</a></li>
                     <li class="nav-item"><a class="nav-link" href="#palestrantes">Palestrantes</a></li>
                     <li class="nav-item"><a class="nav-link" href="#local">Local</a></li>
@@ -60,18 +75,17 @@
         </div>
     </nav>
     
-    <!-- Head Section / Início -->
+    <!-- Seção de Início -->
     <section id="inicio">
-        <!-- O container agora está diretamente dentro da seção estilizada -->
         <div class="container">
-            <h1 class="display-5 fw-bold" style="text-shadow: 2px 2px 8px #000;">Seminário Capixaba de Aplicações de Inteligência Artificial</h1>
-            <p class="lead" style="text-shadow: 2px 2px 8px #000;">Data: 20 de novembro de 2023</p>
-            <p class="mt-4" style="text-shadow: 2px 2px 8px #000;">Venha participar deste evento que reunirá especialistas e entusiastas da Inteligência Artificial!</p>
+            <p style="text-shadow: 2px 2px 8px #000; font-size: 1.1rem;">24 e 25 de setembro de 2025</p>
+            <h1 class="display-4" style="text-shadow: 2px 2px 8px #000; font-weight: 500; text-transform: uppercase;">SEMINÁRIO CAPIXABA DE APLICAÇÕES EM INTELIGÊNCIA ARTIFICIAL</h1>
+            <p class="mt-2" style="text-shadow: 2px 2px 8px #000; font-size: 1rem; text-transform: uppercase;">INSTITUTO FEDERAL DO ESPÍRITO SANTO - CAMPUS SERRA</p>
         </div>
     </section>
 
     <!-- Programação -->
-    <section id="programacao" class="bg-success text-white">
+    <section id="programacao" class="bg-light text-success">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
@@ -86,7 +100,7 @@
     </section>
 
     <!-- Sobre -->
-    <section id="sobre" class="bg-light">
+    <section id="sobre" class="bg-success text-white">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
@@ -101,13 +115,13 @@
     </section>
 
     <!-- Inscrições -->
-    <section id="inscricoes" class="bg-light">
+    <section id="inscricoes" class="bg-light text-success">
         <div class="container">
             <h2 class="mb-4 text-center">Inscrições</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 shadow-sm">
-                        <div class="card-body d-flex flex-column align-items-center text-center">
+                        <div class="card-body d-flex flex-column align-items-center text-center text-success">
                             <h5 class="card-title">Inscrição Gratuita</h5>
                             <p class="card-text">Participe do evento sem custo. Inscreva-se agora para garantir sua vaga!</p>
                             <a href="https://docs.google.com/forms/d/1aoIrMTHbns5TtFES8cQzgG0yYuUz1b59rAE6-1qU_zo/" class="btn btn-success mt-auto" target="_blank">Inscreva-se</a>
@@ -119,7 +133,10 @@
     </section>
 
     <!-- Palestrantes -->
-    <section id="palestrantes">
+    <section id="palestrantes" class="bg-success text-white">
+         <div class="container">
+            <h2 class="mb-4 text-center">Palestrantes Confirmados</h2>
+            <p class="text-center mb-5">Conheça os especialistas que compartilharão seus conhecimentos e experiências no evento.</p>
         <div class="container">
             <h2 class="mb-5 text-center">Palestrantes</h2>
             <div class="row justify-content-center g-4">
@@ -173,11 +190,11 @@
     </section>
 
     <!-- Local -->
-    <section id="local" class="bg-light">
+    <section id="local" class="bg-light text-success">
         <div class="container text-center">
             <h2 class="mb-4">Local</h2>
             <p>
-                O Campus Serra está localizado às margens da Rodovia ES010, a uma distância aproximada de 20 km do aeroporto Eurico Sales, principal porta de entrada de participantes e convidados do seminário. Duas vias principais conectam o aeroporto ao local do seminário: a Rodovia Norte/Sul e a BR101. O local do seminário pode ser facilmente acessado por automóvel, participantes que precisem utilizar o transporte público, contarão com uma malha do transporte público que facilitam o acesso ao Campus Serra, qualquer que seja a origem.
+                O Campus Serra está localizado às margens da Rodovia ES010
             </p>
             <div class="row justify-content-center">
                 <div class="col-md-10 col-lg-8">
@@ -198,5 +215,22 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- SCRIPT PARA MUDANÇA DE COR DA NAVBAR -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function(){
+            const navbar = document.querySelector('.navbar');
+            
+            window.addEventListener('scroll', function() {
+                // Adiciona a classe 'navbar-scrolled' se o scroll for maior que 50px
+                if (window.scrollY > 50) {
+                    navbar.classList.add('navbar-scrolled');
+                } else {
+                    // Remove a classe se o scroll for menor ou igual a 50px
+                    navbar.classList.remove('navbar-scrolled');
+                }
+            });
+        });
+    </script>
 </body>
 </html>
