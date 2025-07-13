@@ -6,40 +6,56 @@
     <title>Seminário Capixaba de Aplicações de Inteligência Artificial</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
+        /* Ajusta o ponto de parada da rolagem para compensar a altura da navbar fixa */
+        html {
+            scroll-padding-top: 70px; /* Ajuste este valor se a altura da sua navbar mudar */
+        }
+
         .navbar {
             background-color: #198754 !important; 
         }
         .nav-link {
-            color: rgb(3, 3, 144) !important;
+            color: white !important; /* Corrigido para branco para melhor contraste */
             font-weight: bold;
         }
-        .myBackground {
-        background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Mestre_%C3%81lvaro.jpg/1657px-Mestre_%C3%81lvaro.jpg);
-        background-size: cover;
-        background-position: center;
-        position: relative;
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        color: white
-}
 
+        /* --- NOVO CSS PARA FAZER CADA SEÇÃO OCUPAR UMA TELA --- */
+
+        /* Regra geral para todas as seções */
+        section {
+            min-height: 100vh; /* Define a altura mínima como 100% da altura da tela */
+            display: flex; /* Habilita o Flexbox */
+            justify-content: center; /* Centraliza o container horizontalmente */
+            align-items: center; /* Centraliza o container verticalmente */
+            width: 100%;
+        }
+
+        /* Estilo específico para a primeira seção (Início) */
+        #inicio {
+            background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Mestre_%C3%81lvaro.jpg/1657px-Mestre_%C3%81lvaro.jpg);
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center; /* Centraliza o texto dentro da seção */
+        }
     </style>
 </head>
 <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.jpeg" alt="IFES" height="80" class="me-2">
+            <a class="navbar-brand" href="#inicio">
+                <img src="images/logo.jpeg" alt="IFES" height="40" class="me-2">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link active" href="#">Início</a></li>
+                    <!-- Links atualizados para apontar para os IDs corretos -->
+                    <li class="nav-item"><a class="nav-link active" href="#inicio">Início</a></li>
                     <li class="nav-item"><a class="nav-link" href="#programacao">Programação</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
                     <li class="nav-item"><a class="nav-link" href="#inscricoes">Inscrições</a></li>
                     <li class="nav-item"><a class="nav-link" href="#palestrantes">Palestrantes</a></li>
                     <li class="nav-item"><a class="nav-link" href="#local">Local</a></li>
@@ -47,59 +63,58 @@
             </div>
         </div>
     </nav>
-
     
-    <!-- Head Section -->
-    <section class="bg-light py-5 text-center">
-            <div class="myBackground d-flex flex-column justify-content-center align-items-center" style="min-height: 350px; border-radius: 16px; inset: 0;">
-                <h1 class="display-5 fw-bold" style="color: white; text-shadow: 1px 1px 8px #000;">Seminário Capixaba de Aplicações de Inteligência Artificial</h1>
-                <p class="lead" style="color: white; text-shadow: 1px 1px 8px #000;">Data: 20 de novembro de 2023</p>
-                <p class="mt-4" style="color: white; text-shadow: 1px 1px 8px #000;">Venha participar deste evento que reunirá especialistas e entusiastas da Inteligência Artificial!</p>
-            </div>
+    <!-- Head Section / Início -->
+    <section id="inicio">
+        <!-- O container agora está diretamente dentro da seção estilizada -->
+        <div class="container">
+            <h1 class="display-5 fw-bold" style="text-shadow: 2px 2px 8px #000;">Seminário Capixaba de Aplicações de Inteligência Artificial</h1>
+            <p class="lead" style="text-shadow: 2px 2px 8px #000;">Data: 20 de novembro de 2023</p>
+            <p class="mt-4" style="text-shadow: 2px 2px 8px #000;">Venha participar deste evento que reunirá especialistas e entusiastas da Inteligência Artificial!</p>
+        </div>
     </section>
+
     <!-- Programação -->
-    <section class="bg-success text-white py-5">
+    <section id="programacao" class="bg-success text-white">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <h2 class="mb-4">Programação</h2>
                     <p>Confira a programação completa do evento, com palestras, workshops e mesas redondas.</p>
                 </div>
-                <div class="col-md-6">
-                    <img src="images/logo.jpeg" alt="IFES" class="img-fluid rounded-circle">
+                <div class="col-md-6 text-center">
+                    <img src="images/logo.jpeg" alt="IFES" class="img-fluid rounded-circle" style="max-width: 250px;">
                 </div>
             </div>
         </div>
     </section>
-    </section>
+
     <!-- Sobre -->
-    <section class="bg-light py-5">
+    <section id="sobre" class="bg-light">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <h2 class="mb-4">Sobre o Evento</h2>
                     <p>O Seminário Capixaba de Aplicações de Inteligência Artificial é um evento que visa promover o conhecimento e a troca de experiências na área de Inteligência Artificial, reunindo especialistas, estudantes e profissionais do setor.</p>
                 </div>
-                <div class="col-md-6">
-                    <img src="images/logo.jpeg" alt="IFES" class="img-fluid rounded-circle">
+                <div class="col-md-6 text-center">
+                    <img src="images/logo.jpeg" alt="IFES" class="img-fluid rounded-circle" style="max-width: 250px;">
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Inscrições -->
-    <section id="inscricoes" class="py-5 bg-light">
+    <section id="inscricoes" class="bg-light">
         <div class="container">
-            <h2 class="mb-4 text-center align-items-center">Inscrições</h2>
+            <h2 class="mb-4 text-center">Inscrições</h2>
             <div class="row justify-content-center">
                 <div class="col-md-6 col-lg-4">
-                    <div class="card h-100">
-                        <div class="card-body d-flex flex-column align-items-center">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body d-flex flex-column align-items-center text-center">
                             <h5 class="card-title">Inscrição Gratuita</h5>
                             <p class="card-text">Participe do evento sem custo. Inscreva-se agora para garantir sua vaga!</p>
-                            <div class="d-flex justify-content-center">
-                                <a href="https://docs.google.com/forms/d/1aoIrMTHbns5TtFES8cQzgG0yYuUz1b59rAE6-1qU_zo/" class="btn btn-success" target="_blank">Inscreva-se</a>
-                            </div>
+                            <a href="https://docs.google.com/forms/d/1aoIrMTHbns5TtFES8cQzgG0yYuUz1b59rAE6-1qU_zo/" class="btn btn-success mt-auto" target="_blank">Inscreva-se</a>
                         </div>
                     </div>
                 </div>
@@ -108,57 +123,52 @@
     </section>
 
     <!-- Palestrantes -->
-    <section id="palestrantes" class="py-5">
+    <section id="palestrantes">
         <div class="container">
-            <h2 class="mb-4 text-center">Palestrantes</h2>
-            <div class="row justify-content-center">
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body text-center">
-                            <img src="images/albertoferreira.jpeg" class="card-img-top mx-auto mt-3 rounded-circle" alt="Alberto Ferreira" style="width: 100px; height: 100px; object-fit: cover;">
+            <h2 class="mb-5 text-center">Palestrantes</h2>
+            <div class="row justify-content-center g-4">
+                <div class="col-md-4 col-lg-3">
+                    <div class="card h-100 text-center">
+                        <img src="images/albertoferreira.jpeg" class="card-img-top mx-auto mt-3 rounded-circle" alt="Alberto Ferreira" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="card-body">
                             <h5 class="card-title">Alberto Ferreira</h5>
-                            <p class="card-text">Alberto Ferreira é professor da UFES</p>
+                            <p class="card-text">Professor da UFES</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body text-center">
-                            <img src="images/alexandre.jpg" class="card-img-top mx-auto mt-3 rounded-circle" alt="Alexandre" style="width: 100px; height: 100px; object-fit: cover;">
+                <div class="col-md-4 col-lg-3">
+                    <div class="card h-100 text-center">
+                        <img src="images/alexandre.jpg" class="card-img-top mx-auto mt-3 rounded-circle" alt="Alexandre" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="card-body">
                             <h5 class="card-title">Alexandre</h5>
-                            <p class="card-text">Alexandre</p>
+                            <p class="card-text">Descrição do Palestrante</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body text-center">
-                            <img src="images/andersonsoares.jpg" class="card-img-top mx-auto mt-3 rounded-circle" alt="André" style="width: 100px; height: 100px; object-fit: cover;">
-                            <h5 class="card-title">andersonsoares</h5>
-                            <p class="card-text">andersonsoares</p>
+                <div class="col-md-4 col-lg-3">
+                    <div class="card h-100 text-center">
+                        <img src="images/andersonsoares.jpg" class="card-img-top mx-auto mt-3 rounded-circle" alt="Anderson Soares" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Anderson Soares</h5>
+                            <p class="card-text">Descrição do Palestrante</p>
                         </div>
                     </div>
                 </div>  
-                <div class="card mb-4">
-                    </div> <!-- Fecha a primeira linha de palestrantes -->
-                    <div class="row justify-content-center mt-4">
-                        <div class="col-md-4">
-                            <div class="card mb-4">
-                                <div class="card-body text-center">
-                                    <img src="images/francomachado.jpeg" class="card-img-top mx-auto mt-3 rounded-circle" alt="Franco Machado" style="width: 100px; height: 100px; object-fit: cover;">
-                                    <h5 class="card-title">Franco Machado</h5>
-                                    <p class="card-text">Franco Machado</p>
-                                </div>
-                            </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="card h-100 text-center">
+                        <img src="images/francomachado.jpeg" class="card-img-top mx-auto mt-3 rounded-circle" alt="Franco Machado" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title">Franco Machado</h5>
+                            <p class="card-text">Descrição do Palestrante</p>
                         </div>
-                    
-                <div class="col-md-4">
-                    <div class="card mb-4">
-                        <div class="card-body text-center">
-                            <img src="images/marceloreis.jpeg" class="card-img-top mx-auto mt-3 rounded-circle" alt="Marcelo Reis" style="width: 100px; height: 100px; object-fit: cover;">
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-3">
+                    <div class="card h-100 text-center">
+                        <img src="images/marceloreis.jpeg" class="card-img-top mx-auto mt-3 rounded-circle" alt="Marcelo Reis" style="width: 100px; height: 100px; object-fit: cover;">
+                        <div class="card-body">
                             <h5 class="card-title">Marcelo Reis</h5>
-                            <p class="card-text">Marcelo Reis</p>
-                                <div class="col-md-4">
+                            <p class="card-text">Descrição do Palestrante</p>
                         </div>
                     </div>
                 </div>
@@ -167,22 +177,24 @@
     </section>
 
     <!-- Local -->
-    <section id="local" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="mb-4 text-center">Local</h2>
+    <section id="local" class="bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Local</h2>
             <div class="row justify-content-center">
-                <div class="col-md-8">
-                    <div class="ratio ratio-16x9">
-<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14977.84004724747!2d-40.2179919!3d-20.1981968!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb81de52407d8d7%3A0x289693da8d05dd09!2sIFES%20-%20Campus%20Serra!5e0!3m2!1sen!2sbr!4v1752086302850!5m2!1sen!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>                    </div>
+                <div class="col-md-10 col-lg-8">
+                    <p class="lead mb-4">O evento será realizado no IFES - Campus Serra.</p>
+                    <div class="ratio ratio-16x9 shadow rounded">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14977.84004724747!2d-40.2179919!3d-20.1981968!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xb81de52407d8d7%3A0x289693da8d05dd09!2sIFES%20-%20Campus%20Serra!5e0!3m2!1spt-BR!2sbr!4v1699999999999!5m2!1spt-BR!2sbr" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Local -->
+    <!-- Footer -->
     <footer class="bg-success text-white text-center py-3">
         <div class="container">
-            <small>Ifes - Campus Serra</small>
+            <small>Ifes - Campus Serra © 2023</small>
         </div>
     </footer>
 
