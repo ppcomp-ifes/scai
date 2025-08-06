@@ -145,7 +145,7 @@
                         <div class="card-body d-flex flex-column align-items-center text-center p-4">
                             <h5 class="card-title" style="color: #914d97;">Inscrição Gratuita</h5>
                             <p class="card-text text-muted">Participe do evento sem custo. Inscreva-se agora para garantir sua vaga!</p>
-                            <a href="https://www.even3.com.br/seminario-capixaba-de-aplicacoes-de-inteligencia-artificial-606549/" class="btn btn-outline" style="color: #914d97; border-color: #914d97;" target="_blank">Inscreva-se</a>
+                            <a href="https://www.even3.com.br/seminario-capixaba-de-aplicacoes-de-inteligencia-artificial-606549/" class="btn btn-lg" style="background-color: #914d97; color: #ffffff; border-color: #914d97; opacity: 90%;" target="_blank">Inscreva-se</a>
                         </div>
                     </div>
                 </div>
@@ -157,10 +157,18 @@
     <!-- ############# SEÇÃO DE PALESTRANTES ############# -->
     <section class="bg-white text-dark py-5">
         <div class="container text-center">
-            <h2 id="palestrantes" class="display-5 mb-3" style="color: #914d97;">Nossos Palestrantes</h2>
+            <h2 id="palestrantes" class="display-5 mb-3" style="color: #914d97;">Nossos Palestrantes</h2>    
             <p class="lead mb-5 mx-auto" style="max-width: 700px;">Uma prévia de alguns dos especialistas renomados que estarão presentes no evento. Conheça o perfil completo de todos na página de palestrantes.</p>
 
             <div id="speakerCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators" style="bottom: -30px;">
+                    <button type="button" data-bs-target="#speakerCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: #914d97;"></button>
+                    <button type="button" data-bs-target="#speakerCarousel" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: #914d97;"></button>
+                    <button type="button" data-bs-target="#speakerCarousel" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: #914d97;"></button>
+                    <button type="button" data-bs-target="#speakerCarousel" data-bs-slide-to="3" aria-label="Slide 4" style="background-color: #914d97;"></button>
+                    <button type="button" data-bs-target="#speakerCarousel" data-bs-slide-to="4" aria-label="Slide 5" style="background-color: #914d97;"></button>
+                </div>
+            
                 <div class="carousel-inner">
                     <!-- Slide 1 -->
                     <div class="carousel-item active">
@@ -177,7 +185,7 @@
                     <!-- Slide 2 -->
                     <div class="carousel-item">
                         <div class="d-flex justify-content-center">
-                           <div class="card text-center" style="width: 20rem;">
+                            <div class="card text-center" style="width: 20rem;">
                                 <img src="images/marceloreis.jpeg" class="card-img-top mx-auto" alt="Foto de Marcelo da Silva Reis" style="width: 200px; height: 200px; object-fit: cover;">
                                 <div class="card-body">
                                     <h5 class="card-title mb-1">Marcelo da Silva Reis</h5>
@@ -188,8 +196,8 @@
                     </div>
                     <!-- Slide 3 -->
                     <div class="carousel-item">
-                         <div class="d-flex justify-content-center">
-                           <div class="card text-center" style="width: 20rem;">
+                            <div class="d-flex justify-content-center">
+                            <div class="card text-center" style="width: 20rem;">
                                 <img src="images/alexandre.jpg" class="card-img-top mx-auto" alt="Foto de Alexandre Chiavegatto Filho" style="width: 200px; height: 200px; object-fit: cover;">
                                 <div class="card-body">
                                     <h5 class="card-title mb-1">Alexandre Chiavegatto Filho</h5>
@@ -200,8 +208,8 @@
                     </div>
                     <!-- Slide 4 -->
                     <div class="carousel-item">
-                         <div class="d-flex justify-content-center">
-                           <div class="card text-center" style="width: 20rem;">
+                            <div class="d-flex justify-content-center">
+                            <div class="card text-center" style="width: 20rem;">
                                 <img src="images/andersonsoares.jpg" class="card-img-top mx-auto" alt="Foto de Anderson Soares" style="width: 200px; height: 200px; object-fit: cover;">
                                 <div class="card-body">
                                     <h5 class="card-title mb-1">Anderson Silva Soares</h5>
@@ -212,8 +220,8 @@
                     </div>
                     <!-- Slide 5 -->
                     <div class="carousel-item">
-                         <div class="d-flex justify-content-center">
-                           <div class="card text-center" style="width: 20rem;">
+                            <div class="d-flex justify-content-center">
+                            <div class="card text-center" style="width: 20rem;">
                                 <img src="images/francomachado.jpeg" class="card-img-top mx-auto" alt="Foto de Franco Machado" style="width: 200px; height: 200px; object-fit: cover;">
                                 <div class="card-body">
                                     <h5 class="card-title mb-1">Franco Machado</h5>
@@ -224,17 +232,17 @@
                     </div>
                 </div>
                 <!-- Controles do Carrossel -->
-                <button class="carousel-control-prev" type="button" data-bs-target="#speakerCarousel" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <button class="carousel-control-prev" type="button" data-bs-target="#speakerCarousel" data-bs-slide="prev" style="background: transparent; border: none;">
+                    <span class="carousel-control-prev-icon" aria-hidden="true" style="background-color: transparent; filter: invert(24%) sepia(44%) saturate(1062%) hue-rotate(237deg) brightness(87%) contrast(92%);"></span>
                     <span class="visually-hidden">Anterior</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#speakerCarousel" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <button class="carousel-control-next" type="button" data-bs-target="#speakerCarousel" data-bs-slide="next" style="background: transparent; border: none;">
+                    <span class="carousel-control-next-icon" aria-hidden="true" style="background-color: transparent; filter: invert(24%) sepia(44%) saturate(1062%) hue-rotate(237deg) brightness(87%) contrast(92%);"></span>
                     <span class="visually-hidden">Próximo</span>
                 </button>
-            </div>
-
-            <a href="palestrantes.html" class="btn btn-light btn-lg mt-5 px-5 py-3">Sobre os Palestrantes</a>
+        </div>
+            <p class="mt-4">Conheça o perfil completo de todos os palestrantes e suas contribuições para o evento na nossa página dedicada.</p>
+            <a href="palestrantes.html" class="btn btn-lg mt-2 px-5 py-3" style="background-color: #914d97; color: #ffffff; border-color: #914d97; opacity: 90%;">Sobre os Palestrantes</a>
         </div>
     </section>
 
