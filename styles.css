@@ -54,7 +54,7 @@ section {
 }
 
 #inicio {
-    background-image: url(images/SCAI_fundo_site.svg);
+    background-image: url(images/SCAI_fundo_inicio_site.svg);
     background-size: cover; /* Preenche toda a tela */
     background-position: center;
     background-repeat: no-repeat;
@@ -73,6 +73,7 @@ section {
 /* Responsividade para #inicio */
 @media (max-width: 768px) {
     #inicio {
+        background-image: url(images/SCAI_fundo_site_mobile.svg);
         padding: 0;
         font-size: 1rem;
         background-size: cover;
@@ -85,6 +86,7 @@ section {
 
 @media (max-width: 480px) {
     #inicio {
+        background-image: url(images/SCAI_fundo_inicio_site_mobile.svg);
         padding: 0;
         font-size: 0.9rem;
         background-size: cover;
