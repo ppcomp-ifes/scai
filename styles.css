@@ -49,7 +49,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: calc(100vw - 2rem);
     padding: 80px 0;
 }
 
@@ -75,12 +75,12 @@ section {
     #inicio {
         background-image: url(images/scai_fundo_site_mobile.svg);
         padding: 0;
-        font-size: 1rem;
         background-size: cover;
         background-position: center;
         min-height: 100vh;
-        width: 100vw;
+        width: calc(100vw - 1rem);
         height: 100vh;
+        overflow: hidden;
     }
 }
 
@@ -89,12 +89,12 @@ section {
     #inicio {
         background-image: url(images/scai_fundo_site_mobile.svg);
         padding: 0;
-        font-size: 1rem;
         background-size: cover;
         background-position: center;
         min-height: 100vh;
-        width: 100vw;
+        width: calc(100vw - 1rem);
         height: 100vh;
+        overflow: hidden;
     }
 }
 
@@ -103,12 +103,12 @@ section {
     #inicio {
         background-image: url(images/scai_fundo_site_mobile.svg);
         padding: 0;
-        font-size: 1rem;
         background-size: cover;
         background-position: center;
         min-height: 100vh;
-        width: 100vw;
+        width: calc(100vw - 1rem);
         height: 100vh;
+        overflow: hidden;
     }
 }
 
@@ -116,12 +116,12 @@ section {
     #inicio {
         background-image: url(images/scai_fundo_site_mobile.svg);
         padding: 0;
-        font-size: 0.9rem;
         background-size: cover;
         background-position: center;
         min-height: 100vh;
-        width: 100vw;
+        width: calc(100vw - 1rem);
         height: 100vh;
+        overflow: hidden;
     }
 }
 
