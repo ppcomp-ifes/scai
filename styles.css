@@ -54,7 +54,7 @@ section {
 }
 
 #inicio {
-    background-image: url(images/SCAI_fundo_inicio_site.svg);
+    background-image: url(images/scai_fundo_inicio_site.svg);
     background-size: cover; /* Preenche toda a tela */
     background-position: center;
     background-repeat: no-repeat;
