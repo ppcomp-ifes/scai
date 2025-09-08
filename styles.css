@@ -45,84 +45,9 @@ html {
 }
 
 section {
-    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: calc(100vw - 2rem);
-    padding: 80px 0;
-}
-
-#inicio {
-    background-image: url(images/scai_fundo_inicio_site.svg);
-    background-size: cover; /* Preenche toda a tela */
-    background-position: center;
-    background-repeat: no-repeat;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 0;
-    min-height: 100vh;
-    width: 100vw;
-    height: 100vh;
-    margin: 0;
-    box-sizing: border-box;
-    overflow: hidden;
-    border: none; /* Remove qualquer borda */
-}
-
-/* Responsividade para #inicio */
-@media (max-width: 1024px) {
-    #inicio {
-        background-image: url(images/scai_fundo_site_mobile.svg);
-        padding: 0;
-        background-size: cover;
-        background-position: center;
-        min-height: 100vh;
-        width: calc(100vw - 1rem);
-        height: 100vh;
-        overflow: hidden;
-    }
-}
-
-/* Responsividade para #inicio */
-@media (max-width: 960px) {
-    #inicio {
-        background-image: url(images/scai_fundo_site_mobile.svg);
-        padding: 0;
-        background-size: cover;
-        background-position: center;
-        min-height: 100vh;
-        width: calc(100vw - 1rem);
-        height: 100vh;
-        overflow: hidden;
-    }
-}
-
-/* Responsividade para #inicio */
-@media (max-width: 768px) {
-    #inicio {
-        background-image: url(images/scai_fundo_site_mobile.svg);
-        padding: 0;
-        background-size: cover;
-        background-position: center;
-        min-height: 100vh;
-        width: calc(100vw - 1rem);
-        height: 100vh;
-        overflow: hidden;
-    }
-}
-
-@media (max-width: 480px) {
-    #inicio {
-        background-image: url(images/scai_fundo_site_mobile.svg);
-        padding: 0;
-        background-size: cover;
-        background-position: center;
-        min-height: 100vh;
-        width: calc(100vw - 1rem);
-        height: 100vh;
-        overflow: hidden;
-    }
 }
 
 /* Estilo para o carrossel de palestrantes */
